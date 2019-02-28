@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import axios from 'axios';
@@ -16,8 +15,12 @@ class App extends Component {
   componentDidMount(){
     axios.get('http://localhost:5000/friends')
     .then(res => this.setState({friends: res.data}))
-    .catch(err => console.long(err + 'something went wrong'));
+    .catch(err => console.long(err + 'wrong'));
   }
+
+// is git working
+
+ 
 
   render() {
     return (
